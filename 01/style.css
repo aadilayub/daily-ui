@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--peach: #fcd8d1;
+	--blue: #0c36fb;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--peach);
+}
+
+.container {
+	height: 66%;
+	min-height: 400px;
+	width: 64%;
+	max-width: 368px; 
+	background-color: white;
+}
