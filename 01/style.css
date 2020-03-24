@@ -7,6 +7,7 @@
 :root {
 	--peach: #fcd8d1;
 	--blue: #0c36fb;
+	--grey: gray;
 }
 
 body {
@@ -22,6 +23,49 @@ body {
 	height: 66%;
 	min-height: 400px;
 	width: 64%;
-	max-width: 368px; 
+	max-width: 335px; 
 	background-color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container .logo {
+	font-size: 44px;
+}
+
+.container .inputs {
+	display: flex;
+	flex-direction: column;
+}
+
+.container input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid var(--blue);
+	padding-bottom: 3px;
+	color: var(--blue);
+	margin: 10px 0;
+}
+
+.container button {
+	background: var(--blue);
+	border: 1px solid var(--blue);
+	border-radius: 23px;
+	padding: 7px 23px;
+	color: white;
+	font-size: 19px;
+}
+
+.container > * {
+	color: var(--blue);
+	margin: 10px 0;
+	margin-bottom: 20px;
+}
+
+.container small {
+	color: var(--grey);
+	font-family: sans-serif;
 }
